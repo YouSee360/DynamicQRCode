@@ -6,12 +6,12 @@ services:
     environment:
       TYPE: "docker"
       QRCODE_GENERATOR: "internal-chillerlan.qrcode"
-      BASE_URL: "https://mydomain.com"
+      BASE_URL: "https://dynamic-qr-code-sepia.vercel.app/"
       DATABASE_HOST: "php-dynamic-qrcode-db"
       DATABASE_PORT: "3306"
       DATABASE_NAME: "qrcode"
       DATABASE_USER: "qrcode"
-      DATABASE_PASSWORD: "changeme"
+      DATABASE_PASSWORD: "YouSee360"
       DATABASE_PREFIX: ""
       DATABASE_CHARSET: "utf8"
     ports:
@@ -31,10 +31,10 @@ services:
     ports:
       - '13306:3306'
     environment:
-      MYSQL_ROOT_PASSWORD: "changeme"
+      MYSQL_ROOT_PASSWORD: "YouSee360"
       MYSQL_DATABASE: "qrcode"
       MYSQL_USER: "qrcode"
-      MYSQL_PASSWORD: "changeme"
+      MYSQL_PASSWORD: "YouSee360"
     networks:
       - php-dynamic-qrcode-network
 
